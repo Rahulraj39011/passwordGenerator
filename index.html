@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       
+     <h1>Password Genrator</h1>
+
+     <div class="display_container">
+        <input readonly placeholder="Password" class="display" >
+       <button data-copy>
+        <span data-copyMsg></span>
+        <img src="copy1.jpg" alt="copyy" height="22" width="22">
+       </button>
+
+     </div>
+
+     <div class="input_container">
+
+        <div id="pas_len">
+           <p>Password Length</p>
+          <div data_lengthNo>0</div>
+        </div>
+
+        <input type="range" min="0" max="20"  step="1" class="slider" data_lengthSlider>
+
+
+        <div>
+        <input type="checkbox" id="uppercase" class="box">
+        <label for="uppercase">Include Uppercase Letters</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="lowercase" class="box">
+            <label for="lowercase">Include Lowercase Letters</label>
+        </div>
+
+            <div>
+                <input type="checkbox" id="numbers" class="box">
+                <label for="numbers">Include Numbers</label>
+            </div>
+            <div>
+                    <input type="checkbox" id="symbols" class="box">
+                    <label for="symbols">Include Symbols</label>
+            </div>
+
+        <div class="strength_con">
+            <p>Strength</p>
+   
+            <div id="red" data_indicator></div>
+        </div>
+    
+
+        <button id="genrateButton">Genrate Password</button>
+     </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
